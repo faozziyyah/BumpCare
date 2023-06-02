@@ -1,0 +1,282 @@
+#first, #second, #third, #fourth, .step, #seventh{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+#first{
+    margin-top: 2em;
+}
+
+#first-left, #first-right, #second > aside, #third > aside, #fourth > aside, .step-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+#first-left, #first-right{
+    width: 47%;
+}
+
+#first-left > img {
+    width: 85%;
+}
+
+#first-left > p, #second > aside > p, #third > aside > p, #fourth > aside > p, .step-details > p {
+    color: #745464;
+}
+
+#first-left > a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #510115;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ffd700;
+    border-radius: 5px;
+    width: 40%;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#first-right > h1, #second > aside > h3, #third > aside > h3, #fourth > aside > h3, .guide > h1, .step-details > h3, .step-intro > h1, #sixth > h1, #seventh > form > h3 {
+    color: #510115;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+#first-right > h1 {
+    font-size: 2.5rem;
+    margin-top: 1.8em;
+}
+
+#second, #seventh {
+    margin-top: 4em;
+}
+
+#second > img, #seventh > img {
+    width: 35%;
+}
+
+#second > aside, #fourth > aside {
+    width: 50%;
+}
+
+#second > aside > h3, #third > aside > h3, #fourth > aside > h3 {
+    font-size: 2rem;
+    margin-top: 2em;
+}
+
+#second > aside > p, #third > aside > p, #fourth > aside > p, .step-details > p {
+    font-weight: 600;
+    margin-top: -1em;
+    font-size: .9rem;
+}
+
+#second > aside > p {
+    width: 80%;
+}
+
+#third{
+    background-color: #fff1f4;
+    margin-top: 4em;
+    border-radius: 5px;
+}
+
+#fourth {
+    background-color: #f6e5fa;
+    margin-top: 4em;
+    border-radius: 5px;
+}
+
+#third > aside{
+    width: 50%;
+    margin-left: 1.5em;
+}
+
+#third > img, #fourth > img {
+    width: 40%;
+}
+
+.guide, #sixth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 3em;
+}
+
+.guide > h1, #sixth > h1 {
+    width: 50%;
+    font-size: 1.8rem;
+}
+
+#steps-container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.step{
+    margin-top: 1em;
+}
+
+.step-intro{
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+}
+
+.step-details{
+    width: 60%;
+}
+
+.step-details > h3 {
+    margin-top: 3em;
+    font-weight: 500;
+}
+
+.step-details > p {
+    width: 55%;
+}
+
+.step-intro > h1 {
+    font-size: 2em;
+    margin-right: 10px;
+}
+
+.step-intro > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 220px;
+    border-radius: 3px;
+    background-color: #fff1f4;
+}
+
+.step-intro > div > img {
+    width: 60%;
+}
+
+#step-details{
+    margin-left: 2em;
+}
+
+#step-details > p{
+    width: 80%;
+}
+
+#step-intro{
+    width: 45%;
+    margin-right: 20em;
+}
+
+#step-intro > div > img {
+    width: 55%;
+    margin-top: -4em;
+}
+
+#sixt > form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #745464;
+    background-color: #fff1f4;
+    width: 30%;
+    padding: 1em;
+}
+
+#sixt > form > input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+#sixt > form > img {
+    width: 5%;
+}
+
+#sixth > img {
+    background-color: #fff1f4;
+    width: 100%;
+}
+
+#seventh{
+    background-color: #f6e5fa;
+}
+
+#seventh > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    width: 60%;
+}
+
+#seventh > form > p {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #745464;
+}
+
+#seventh > form > h3 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-top: -10px;
+}
+
+#seventh > form > input {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    width: 50%;
+    border-radius: 5px;
+    padding: 1.5em;
+}
+
+#seventh > form > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin-top: 2em;
+}
+
+
+
+#seventh > form > div > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    background-color: #ffd700;
+    color: #510115;
+    font-weight: 600;
+    width: 40%;
+    text-transform: capitalize;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+#seventh > form > div > p {
+    color: #745464;
+    font-size: 12px;
+    margin-left: 1em;
+    width: 60%;
+}
+
+#seventh > form > div > p > a{
+    text-decoration: none;
+    color: #510115;
+    font-weight: 500;
+}
