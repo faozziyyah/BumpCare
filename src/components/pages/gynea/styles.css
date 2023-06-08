@@ -4,31 +4,26 @@
     width: 90%;
     margin: auto;
 }
-
+    
 #first{
     margin-top: 2em;
 }
 
-#first-left, #first-right, #second > aside, #third > aside, #fourth > aside, .step-details{
+#second1, #first-left, #first-right, #third > aside, #fourth > aside, .step-details{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     text-align: left;
 }
 
-#first-left, #first-right{
-    width: 47%;
+#second > #second1, #second > #second2, #third > aside, #fourth > aside, .step-details{
+    flex-direction: column;
+    justify-content: flex-start;
 }
-
-#first-left > img {
-    width: 85%;
-}
-
-#first-left > p, #second > aside > p, #third > aside > p, #fourth > aside > p, .step-details > p {
+    
+#first-left > p, #first-right > aside > p, #second > aside > p, #third > aside > p, #fourth > aside > p, .step-details > p {
     color: #745464;
 }
 
-#first-left > a {
+#first-left > a, #first-right > aside > a {
     text-decoration: none;
     text-transform: capitalize;
     color: #510115;
@@ -36,38 +31,36 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 1px solid #ffd700;
     border-radius: 5px;
-    width: 40%;
     padding: 10px;
     font-weight: 600;
     font-size: 15px;
 }
-
-#first-right > h1, #second > aside > h3, #third > aside > h3, #fourth > aside > h3, .guide > h1, .step-details > h3, .step-intro > h1, #sixth > h1, #seventh > form > h3 {
+    
+#first-left > h1, #first-right > h1, #second > aside > h3, #third > aside > h3, #fourth > aside > h3, .guide > h1, .step-details > h3, .step-intro > h1, #sixth > h1, #seventh > form > h3 {
     color: #510115;
     text-transform: capitalize;
     font-weight: 700;
 }
 
-#first-right > h1 {
+#first-right > h1, #first-left > h1 {
     font-size: 2.5rem;
     margin-top: 1.8em;
 }
-
+    
 #second, #seventh {
     margin-top: 4em;
 }
 
-#second > img, #seventh > img {
+#seventh > img {
     width: 35%;
 }
 
-#second > aside, #fourth > aside {
+#fourth > aside {
     width: 50%;
 }
 
-#second > aside > h3, #third > aside > h3, #fourth > aside > h3 {
+#second > #second2 > h3, #third > aside > h3, #fourth > aside > h3 {
     font-size: 2rem;
     margin-top: 2em;
 }
@@ -121,7 +114,6 @@
 #steps-container{
     display: flex;
     flex-direction: column;
-    width: 90%;
 }
 
 .step{
@@ -131,20 +123,11 @@
 .step-intro{
     display: flex;
     justify-content: space-between;
-    width: 25%;
-}
-
-.step-details{
-    width: 60%;
 }
 
 .step-details > h3 {
     margin-top: 3em;
     font-weight: 500;
-}
-
-.step-details > p {
-    width: 55%;
 }
 
 .step-intro > h1 {
@@ -156,8 +139,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 85%;
-    height: 220px;
     border-radius: 3px;
     background-color: #fff1f4;
 }
@@ -166,25 +147,7 @@
     width: 60%;
 }
 
-#step-details{
-    margin-left: 2em;
-}
-
-#step-details > p{
-    width: 80%;
-}
-
-#step-intro{
-    width: 45%;
-    margin-right: 20em;
-}
-
-#step-intro > div > img {
-    width: 55%;
-    margin-top: -4em;
-}
-
-#sixt > form{
+#sixth > form{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -193,15 +156,16 @@
     background-color: #fff1f4;
     width: 30%;
     padding: 1em;
+    margin-bottom: 1em;
 }
 
-#sixt > form > input{
+#sixth > form > input{
     border: none;
     outline: none;
     background-color: transparent;
 }
 
-#sixt > form > img {
+#sixth > form > img {
     width: 5%;
 }
 
@@ -279,4 +243,179 @@
     text-decoration: none;
     color: #510115;
     font-weight: 500;
+}
+
+/* mobile screen */
+@media screen and (max-width: 768px) {
+
+    #first-left > p, #first-left > a, #first-right > h1, span, #second2, #seventh {
+        display: none;
+    }
+
+    #first, #second{
+        flex-direction: column;
+    }
+
+    #first-left, #first-right{
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        margin-top: 1em;
+    }
+
+    #first-left > img, #first-right > img {
+        width: 50%;
+    }
+
+    #first-right > aside {
+        width: 45%;
+    }
+
+    #first-left > h1{
+        width: 45%;
+        font-size: 1.7em;
+    }
+
+    #first-right > aside > p {
+        font-weight: 500;
+    }
+
+    #first-right > aside > a {
+        width: 60%;
+        background-color: #ffd700;
+    }
+
+    #second{
+        width: 90%;
+    }
+
+    #second > img {
+        width: 70%;
+        margin-top: 1em;
+    }
+
+    #second1{
+        width: 100%;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    #second1 > h3{
+        font-size: 2rem;
+    }
+
+    #second1 > p{
+        width: 80%;
+        font-size: 15px;
+    }
+
+    #third > aside > h3, #fourth > aside > h3{
+        margin-top: 1em;
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+    
+    #third > aside > p, #fourth > aside > p{
+        font-size: 12px;
+    }
+
+    .guide > h1, #sixth > h1 {
+        width: 80%;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    .steps-container, #step{
+        width: 100%;
+    }
+
+    #step-details, #step-int{
+        margin-left: -2em;
+    }
+
+    .step-details{
+        width: 50%;
+    }
+
+    #step-title{
+        width: 60%;
+        margin-left: -6em;
+    }
+
+    #sixth > form{
+        width: 70%;
+    }
+}
+
+/* desktop screen */
+@media only screen and (min-width: 769px) {
+
+    #first-left > h1, #first-right > aside {
+        display: none;
+    }
+
+    #second2{
+        display: none;
+    }
+
+    #first-left, #first-right{
+        width: 47%;
+        flex-direction: column;
+    }
+
+    #first-left > img {
+        width: 85%;
+    }
+
+    #second > aside {
+        width: 50%;
+    }
+
+    #second > img {
+        width: 35%;
+    }
+    
+    #first-left > a {
+        border: 1px solid #ffd700;
+        width: 40%;
+    }
+
+    .steps-container{
+        width: 90%;
+    }
+
+    #step-intro > div > img {
+        width: 55%;
+        margin-top: -4em;
+    }
+
+    #step-details > p{
+        width: 80%;
+    }
+    
+    #step-intro{
+        width: 45%;
+        margin-right: 20em;
+    }
+
+    .step-intro{
+        width: 25%;
+    }
+
+    .step-details > p {
+        width: 55%;
+    }
+
+    .step-intro > div {
+        width: 85%;
+        height: 220px;
+    }
+
+    #step-details{
+        margin-left: 2em;
+    }
+
+    .step-details{
+        width: 60%;
+    }
 }

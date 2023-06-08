@@ -1,13 +1,76 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html{
+    scroll-behavior: smooth;
+    color: #510115;
+}
+
+h1{
+    font-size: 2.8rem;
+}
+
+h2{
+    font-size: 3.5rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+h4,h5{
+    font-size: 1.5rem;
+}
+
+li,button,input,label,p,a{
+    font-size: 1rem;
+}
+
+ul{
+    list-style: none;
+}
+
+.hero-section{
+    /* background: #652893; */
+    background-image: url("./assets/Group\ 3811.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    width: 100%;
+}
+
+.founding-story{
+    min-height: 75vh;
+    width: 100%;
+}
+
+.imgFST{
+    background-image: url("./assets/MOMS\ 4\ 1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.our-service{
+    min-height: 95vh;
+    width: 100%;  
+}
+
+.how-it-works{
+    min-height: 65vh;
+    width: 100%;
+}
+
+.testimonial-div{
+    background-image: url("./assets/Rectangle\ 529.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    width: 70%;
 }

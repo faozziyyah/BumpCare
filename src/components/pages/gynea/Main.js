@@ -19,14 +19,23 @@ const Main = () => {
             <div id='first-left'>
 
                 <img src={image} alt='' />
-                <p>An ovulation tracker is a helpful tool for women who are trying to conceive. 
-                    It can help you identify your fertile window, which is the time when you are most likely to get pregnant.
+                <p>Expert care for you and your baby, Your health and well-being matter to us. 
+                    Easily find and connect with experienced gynecologists in your area and schedule your appointment Today!
                 </p>
                 <a href="http">find a gyneacologist</a>
+
+                <h1>find the right gyneacologist for your pregnancy journey</h1>
 
             </div>
 
             <div id='first-right'>
+
+                <aside>
+                    <p>Expert care for you and your baby, Your health and well-being matter to us. 
+                        Easily find and connect with experienced gynecologists in your area <span>and schedule your appointment Today</span>!
+                    </p>
+                    <a href="http">find a gyneacologist</a>
+                </aside>
 
                 <h1>find the right gyneacologist for your pregnancy journey</h1>
                 <img src={image2} alt='' />
@@ -37,18 +46,23 @@ const Main = () => {
 
         <section id='second'>
 
+            <aside id="second1">
+                <h3>we're bump care</h3>
+                <p>As an expectant mother, finding the right gynecologist is crucial to ensuring a safe and healthy pregnancy journey. 
+                    Our website offers a comprehensive directory of gynecologists who specialize in obstetrics and prenatal care.
+                    Simply enter your location and browse through our list of clinics close to you with highly qualified and experienced gynecologists. 
+                    Let us help you find the perfect gynecologist to guide you through this exciting time in your life.
+                </p>
+            </aside>
+
             <img src={image1} alt='' />
 
-            <aside>
+            <aside id="second2">
                 <h3>we're bump care</h3>
-                <p>From the moment you find out that you're expecting to the day you hold your 
-                    little bundle of joy in your arms, there's nothing more magical than bringing
-                    a new life into the world. Our pregnancy page is chock-full of information
-                    and tips to help you navigate every step of the way.We'll share expert advice
-                    on conception advice, nutrition and exercise to keep you and baby healthy,
-                    offer support and reassurance during those morning sickness days,and 
-                    guide you through the many ups and downs of pregnancy. Lets make this
-                    Journey an unforgettable one!
+                <p>As an expectant mother, finding the right gynecologist is crucial to ensuring a safe and healthy pregnancy journey. 
+                    Our website offers a comprehensive directory of gynecologists who specialize in obstetrics and prenatal care.
+                    Simply enter your location and browse through our list of clinics close to you with highly qualified and experienced gynecologists. 
+                    Let us help you find the perfect gynecologist to guide you through this exciting time in your life.
                 </p>
             </aside>
 
@@ -58,14 +72,10 @@ const Main = () => {
 
             <aside>
                 <h3>who's a gyneacologist</h3>
-                <p>From the moment you find out that you're expecting to the day you hold your 
-                    little bundle of joy in your arms, there's nothing more magical than bringing
-                    a new life into the world. Our pregnancy page is chock-full of information
-                    and tips to help you navigate every step of the way.We'll share expert advice
-                    on conception advice, nutrition and exercise to keep you and baby healthy,
-                    offer support and reassurance during those morning sickness days,and 
-                    guide you through the many ups and downs of pregnancy. Lets make this
-                    Journey an unforgettable one!
+                <p>A gynecologist is a medical doctor who specializes in the health of the female reproductive system, 
+                    including the uterus, ovaries, vagina, and breasts. Gynecologists provide a wide range of services to women, 
+                    such as  diagnosing, treating reproductive and sexual health problems, providing family planning counseling and birth control options, 
+                    and assisting with fertility issues. They also often provide prenatal care for pregnant women and deliver babies.
                 </p>
             </aside>
 
@@ -79,14 +89,10 @@ const Main = () => {
 
             <aside>
                 <h3>why should i visit a gyneacologist</h3>
-                <p>From the moment you find out that you're expecting to the day you hold your 
-                    little bundle of joy in your arms, there's nothing more magical than bringing
-                    a new life into the world. Our pregnancy page is chock-full of information
-                    and tips to help you navigate every step of the way.We'll share expert advice
-                    on conception advice, nutrition and exercise to keep you and baby healthy,
-                    offer support and reassurance during those morning sickness days,and 
-                    guide you through the many ups and downs of pregnancy. Lets make this
-                    Journey an unforgettable one!
+                <p>A gynecologist can monitor the health of the mother and baby, perform necessary tests and screenings, 
+                    identify and manage any potential complications, provide guidance on proper nutrition and exercise during pregnancy, 
+                    and offer emotional support throughout the pregnancy. Regular check-ups with a gynecologist can help ensure a healthy pregnancy and delivery, 
+                    as well as identify and address any issues early on.
                 </p>
             </aside>
         </section>

@@ -7,7 +7,7 @@ const Steps = () => {
   return (
     <main id="steps-container">
 
-      <div className="step">
+      <div className="step" id="step">
 
         <div className="step-intro">
 
@@ -47,11 +47,11 @@ const Steps = () => {
 
       <div className="step">
 
-        <div className="step-intro">
+        <div className="step-intro" id="step-int">
 
           <h1>03</h1>
 
-          <div>
+          <div id="step-title">
             <img src={image2} alt="" />
           </div>
 
