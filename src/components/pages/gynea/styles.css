@@ -45,7 +45,11 @@
 
 #first-right > h1, #first-left > h1 {
     font-size: 2.5rem;
-    margin-top: 1.8em;
+}
+
+#first-right > h1 {
+    margin-top: .8em;
+    margin-bottom: 1em;
 }
     
 #second, #seventh {
@@ -60,19 +64,16 @@
     width: 50%;
 }
 
-#second > #second2 > h3, #third > aside > h3, #fourth > aside > h3 {
+#second2 > h3, #third > aside > h3, #fourth > aside > h3 {
     font-size: 2rem;
     margin-top: 2em;
+    margin-bottom: 1em;
 }
 
 #second > aside > p, #third > aside > p, #fourth > aside > p, .step-details > p {
     font-weight: 600;
     margin-top: -1em;
     font-size: .9rem;
-}
-
-#second > aside > p {
-    width: 80%;
 }
 
 #third{
@@ -92,10 +93,6 @@
     margin-left: 1.5em;
 }
 
-#third > img, #fourth > img {
-    width: 40%;
-}
-
 .guide, #sixth {
     display: flex;
     flex-direction: column;
@@ -106,14 +103,21 @@
     margin-top: 3em;
 }
 
+#sixth{
+    width: 100%;
+}
+
 .guide > h1, #sixth > h1 {
     width: 50%;
     font-size: 1.8rem;
+    text-align: center;
 }
 
 #steps-container{
     display: flex;
     flex-direction: column;
+    width: 80%;
+    margin-top: 2em;
 }
 
 .step{
@@ -126,7 +130,9 @@
 }
 
 .step-details > h3 {
-    margin-top: 3em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1.5em;
     font-weight: 500;
 }
 
@@ -155,7 +161,8 @@
     border: 1px solid #745464;
     background-color: #fff1f4;
     width: 30%;
-    padding: 1em;
+    padding: 10px 1em;
+    margin-top: 3em;
     margin-bottom: 1em;
 }
 
@@ -176,6 +183,9 @@
 
 #seventh{
     background-color: #f6e5fa;
+    margin-bottom: 3em;
+    border-radius: 5px;
+    align-items: center;
 }
 
 #seventh > form {
@@ -195,7 +205,7 @@
 #seventh > form > h3 {
     font-weight: 600;
     font-size: 1.8rem;
-    margin-top: -10px;
+    margin-top: -5px;
 }
 
 #seventh > form > input {
@@ -204,7 +214,8 @@
     background-color: #fff;
     width: 50%;
     border-radius: 5px;
-    padding: 1.5em;
+    padding: 10px;
+    margin-top: 1em;
 }
 
 #seventh > form > div {
@@ -228,8 +239,8 @@
     font-weight: 600;
     width: 40%;
     text-transform: capitalize;
-    border-radius: 5px;
-    padding: 1em;
+    border-radius: 8px;
+    padding: 10px;
 }
 
 #seventh > form > div > p {
@@ -243,6 +254,7 @@
     text-decoration: none;
     color: #510115;
     font-weight: 500;
+    font-size: 12px;
 }
 
 /* mobile screen */
@@ -273,15 +285,18 @@
 
     #first-left > h1{
         width: 45%;
-        font-size: 1.7em;
+        font-size: 1em;
     }
 
     #first-right > aside > p {
         font-weight: 500;
+        font-size: 12px;
     }
 
     #first-right > aside > a {
-        width: 60%;
+        width: 100%;
+        margin-top: 1em;
+        font-size: 12px;
         background-color: #ffd700;
     }
 
@@ -302,11 +317,11 @@
 
     #second1 > h3{
         font-size: 2rem;
+        margin-bottom: 1em;
     }
 
-    #second1 > p{
-        width: 80%;
-        font-size: 15px;
+    #secondp{
+        width: 100%;
     }
 
     #third > aside > h3, #fourth > aside > h3{
@@ -317,6 +332,11 @@
     
     #third > aside > p, #fourth > aside > p{
         font-size: 12px;
+    }
+
+    #third > img, #fourth > img {
+        width: 40%;
+        height: 300px;
     }
 
     .guide > h1, #sixth > h1 {
@@ -354,7 +374,11 @@
         display: none;
     }
 
-    #second2{
+    #second > aside > p {
+        width: 80%;
+    }
+
+    #second1{
         display: none;
     }
 
@@ -367,6 +391,12 @@
         width: 85%;
     }
 
+    #first-left > p {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        font-weight: 500;
+    }
+
     #second > aside {
         width: 50%;
     }
@@ -377,6 +407,10 @@
     
     #first-left > a {
         border: 1px solid #ffd700;
+        width: 40%;
+    }
+
+    #third > img, #fourth > img {
         width: 40%;
     }
 
@@ -394,8 +428,8 @@
     }
     
     #step-intro{
-        width: 45%;
-        margin-right: 20em;
+        width: 30%;
+        margin-right: 8em;
     }
 
     .step-intro{
@@ -403,7 +437,7 @@
     }
 
     .step-details > p {
-        width: 55%;
+        width: 85%;
     }
 
     .step-intro > div {
@@ -412,10 +446,10 @@
     }
 
     #step-details{
-        margin-left: 2em;
+        margin-left: 0px;
     }
 
     .step-details{
-        width: 60%;
+        width: 45%;
     }
 }

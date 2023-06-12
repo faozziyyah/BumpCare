@@ -73,7 +73,7 @@ const Pregnancy = () => {
         <article className='signscontent'>
 
           <h3>early signs of pregnancy</h3>
-          <h5 id='p1'>Here's a list of common early pregnancy symptoms:</h5>
+          <h5 id='p1'>Here's a list of common early pregnancy symptoms:</h5> <br />
           <ul>
             <li>Missed period</li>
             <li>Nausea and vomiting</li>
@@ -114,11 +114,11 @@ const Pregnancy = () => {
 
       </section>
 
-      <section className="nutrition-container">
+      <section className="nutrition-container" style={{marginTop: '5em'}}>
 
         <div id="top">
 
-          <h3 style={{textAlign: 'center'}}>pregnancy nutrition</h3>
+          <h3 style={{textAlign: 'center', fontWeight: '500'}}>pregnancy nutrition</h3>
 
           <p style={{fontWeight: '600', width: '50%'}}>Eating a balanced and nutritious diet is essential during pregnancy to support both your own health and the growth and development of your baby. 
               Here are some important classes of foods to include in your pregnancy diet:

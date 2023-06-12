@@ -37,11 +37,20 @@ const Fitness = () => {
 
             <div>
 
-                <p style={{border: 'none', backgroundColor: '#fc6f92', color: 'white'}}>High-impact activities like jumping or hopping</p>
-                <p>Contact sports that involves physical contact</p>
-                <p>Exercises that requires holding your breath</p>
-                <p>Activities with high risk of falling</p>
-                <p>Exercises that requires lying on your back</p>
+                <div id="fitness-1">
+
+                    <p style={{border: 'none', backgroundColor: '#fc6f92', color: 'white'}}>High-impact activities like jumping or hopping</p>
+                    <p>Contact sports that involves physical contact</p>
+                    <p>Exercises that requires holding your breath</p>
+
+                </div>
+
+                <div id="fitness-2">
+
+                    <p>Activities with high risk of falling</p>
+                    <p>Exercises that requires lying on your back</p>
+
+                </div>
 
             </div>
 

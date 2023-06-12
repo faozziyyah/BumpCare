@@ -5,6 +5,7 @@ import IndexPage from './components/pages/IndexPage'
 import Layout from './Layout'
 import LoginPage from './components/pages/LoginPage'
 import RegisterPage from "./components/pages/RegisterPage"
+import Community from './components/pages/community/Community';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Route path='/register' element={<RegisterPage />} />
         <Route path='/pregnancy' element={<Pregnancy />} />
         <Route path='/gyneacologist' element={<Main />} />
+        <Route path='/community' element={<Community />} />
       </Route>
     </Routes>
    

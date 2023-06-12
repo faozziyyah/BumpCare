@@ -6,6 +6,8 @@
 
 .pregnancy-hero > h1 {
     margin: auto;
+    font-weight: bold;
+    text-align: center;
 }
 
 .pregnancy-hero, #track-container, #fitness-container, .nutrition-container, .getting, .stages-container, .symptoms-container, .tests-container{
@@ -19,10 +21,16 @@
     color: #510115;
 }
 
-.hero-images, #track-container, #yoga-gallery, .article-container, .stages, .tests-content, #top, #bottom {
+.hero-images, #track-container, #yoga-gallery, .article-container, .stages, .tests-content, #top {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#bottom{
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
 }
 
 .hero-images{
@@ -53,10 +61,11 @@
     color: #510115;
     text-transform: capitalize;
     font-size: 1.5em;
+    font-weight: 600;
 }
 
 .intro > article > p {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
 }
 
@@ -64,13 +73,19 @@
     color: #745464;
 }
 
+.signscontent li{
+    font-weight: 500;
+    list-style-type: circle;
+}
+
 #article-content, #stages, .nutrition-container, #fitness-container{
     display: flex;
     flex-direction: column;
 }
 
-#article-header, #top > p, #tests > h4, #nutrients > h4, .stages-header, .signscontent > h3, .symptoms-container > h3{
+#article-header, #top > p, #tests > h4, #nutrients > h4, .stages-header, .signscontent > h3, .symptoms-container > h3, .h4{
     text-align: left;
+    font-weight: 600;
 }
 
 .article{
@@ -85,10 +100,12 @@
     text-transform: capitalize;
     margin-top: 10px;
     color: #510115;
+    font-weight: 500;
 }
 
 .article > p, .stage > p{
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 500;
 }
 
 .stages > img {
@@ -107,10 +124,13 @@
 
 #p1, #top > p{
     color: #510115;
+    font-weight: 500;
 }
 
 #p2{
     font-size: 14px;
+    font-weight: 500;
+    margin-top: 1em;
 }
 
 .symptoms{
@@ -126,20 +146,23 @@
     display: flex;
     flex-direction: column;
     width: 28%;
-    height: 170px;
-    padding-left: 1em;
+    height: 150px;
+    padding: 1em;
     margin-top: 1em;
     text-align: left;
 }
 
 .symptomsp{
-    margin-top: -5px;
-    width: 75%;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
 }
 
 .tests-container > h3{
     font-size: 1.5em;
     margin-top: 2em;
+    text-align: center;
+    font-weight: bold;
 }
 
 #tests, #nutrients{
@@ -154,17 +177,20 @@
     display: flex;
     align-items: center;
     height: 120px;
-    margin-top: 5px;
-}
-
-#nutrients{
-    height: 500px;
+    margin-top: 7px;
+    padding: 1em;
 }
 
 #nutrients div {
     background-color: #fff1f4;
     border-radius: 5px;
-    padding-top: 3em;
+}
+
+#nutrients ul{
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+    padding: 12px;
 }
 
 .special {
@@ -176,42 +202,80 @@
 #fitness-top > p{
     margin: auto;
     font-weight: 600;
+    text-align: center;
+    margin-top: 1em;
 }
 
-#fitness-middle{
+#fitness-top > h3, #fitness-bottom > h3 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+#fitness-middle, #fitness-bottom{
     margin-top: 2em;
 }
 
 #fitness-middle > p {
     font-size: 1.5em;
     font-weight: 600;
+    text-align: center;
+    margin-bottom: 2em;
 }
 
 #fitness-bottom > div{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 2em;
 }
 
-#fitness-bottom > div p {
+#fitness-1, #fitness-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#fitness-2{
+    width: 60%;
+    margin: auto;
+    margin-top: 1em;
+}
+
+#fitness-1 p, #fitness-2 p {
     border: 1px solid #745464;
     border-radius: 5px;
     color: #745464;
-    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 24%;
-    padding-left: 2em;
-    padding-right: 2em;
-    font-weight: 600;
+    padding: 1em;
+    font-weight: 500;
     font-size: 20px;
+}
+
+#fitness-1 p {
+    width: 30%;
+}
+
+#fitness-2 p {
+    width: 45%;
+}
+
+.nutrient{
+    margin-top: 1em;
+    font-weight: 500;
+    font-size: 12px;
 }
 
 #nutritio-gallery img {
     position: relative;
+}
+
+#food-aside{
+    margin-top: 1em;
 }
 
 /* mobile screen */
@@ -405,7 +469,7 @@
     }
 
     #tests ul > li, #nutrients ul > li {
-        width: 89%;
+        font-weight: 500;
     }
 
     #nutrients div {
@@ -418,42 +482,43 @@
 
     #food1{
         z-index: 999999;
-        left: 2em;
-        top: 5em;
+        left: 4em;
+        top: 1em;
     }
     
     #food2{
-        top: 15em;
-        left: -13em;
-    }
-    
-    #food3 {
-        left: 11em;
-    }
-    
-    #food4 {
-        top: 9em;
+        top: -1em;
         left: 1em;
     }
     
+    #food3 {
+        left: 13em;
+        top: -16em;
+    }
+    
+    #food4 {
+        top: -20em;
+        left: 17em;
+    }
+    
     #food5 {
-        left: 4em;
-        top: -2em;
+        left: 8em;
+        top: -30em;
     }
     
     #food6 {
-        left: -14em;
-        top: -4em;
+        left: 1em;
+        top: -36em;
     }
     
     #food7 {
-        top: -28em;
-        left: -2em;
+        top: -66em;
+        left: 20em;
     }
 
     .special {
-        width: 3%;
-        height: 15px;
+        width: 2%;
+        height: 10px;
     }
 
     #fitness-top > p{

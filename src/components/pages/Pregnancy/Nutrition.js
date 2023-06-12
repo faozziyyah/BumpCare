@@ -23,7 +23,7 @@ const Nutrition = () => {
 
         </section>
 
-        <aside style={{display: 'flex', flexDirection: 'column'}}>
+        <aside style={{display: 'flex', flexDirection: 'column'}} id="food-aside">
 
             <section className="nutrient" style={{color: '#745464', display: 'flex', justifyContent: 'space-between', textAlign: 'left'}}>
                 <div className='special'></div>
@@ -32,28 +32,28 @@ const Nutrition = () => {
                 </p>
             </section>
 
-            <section className="nutrient" style={{color: '#745464', display: 'flex', justifyContent: 'space-between', width: '90%', textAlign: 'left'}}>
+            <section className="nutrient" style={{color: '#745464', display: 'flex', justifyContent: 'space-between', textAlign: 'left'}}>
                 <div className='special'></div>
                 <p>
                     Whole grains: These provide important nutrients like fiber, iron, and B vitamins. Choose whole grain breads and cereals, brown rice, quinoa, and oatmeal.
                 </p>
             </section>
 
-            <section className="nutrient" style={{color: '#745464', display: 'flex', justifyContent: 'space-between', width: '90%', textAlign: 'left'}}>
+            <section className="nutrient" style={{color: '#745464', display: 'flex', justifyContent: 'space-between', textAlign: 'left'}}>
                 <div className='special'></div>
                 <p>
                     Protein: This is essential for building and repairing tissues, and supporting the growth of your baby. Good sources of protein include lean meat, poultry, fish, eggs, beans, and lentils.
                 </p>
             </section>
 
-            <section className="nutrient" style={{color: '#745464', display: 'flex', justifyContent: 'space-between', width: '90%', textAlign: 'left'}}>
+            <section className="nutrient" style={{color: '#745464', display: 'flex', justifyContent: 'space-between', textAlign: 'left'}}>
                 <div className='special'></div>
                 <p>
                     Dairy: Dairy products like milk, cheese, and yogurt provide important nutrients like calcium and vitamin D that are essential for bone growth and development.
                 </p>
             </section>
 
-            <section className="nutrient" style={{color: '#745464', display: 'flex', justifyContent: 'space-between', width: '90%', textAlign: 'left'}}>
+            <section className="nutrient" style={{color: '#745464', display: 'flex', justifyContent: 'space-between', textAlign: 'left'}}>
                 <div className='special'></div>
                 <p>Healthy fats: These are important for brain development and can help prevent preterm labor. 
                     Good sources of healthy fats include nuts, seeds, avocados, and fatty fish like salmon.

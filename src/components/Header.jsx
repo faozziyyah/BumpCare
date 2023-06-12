@@ -22,7 +22,7 @@ export default function Header() {
             <Link to={'/'}  className=''>
                 <li className='text-secondaryText'>Baby Care</li>
             </Link>
-            <Link to={'/'}  className=''>
+            <Link to={'/community'}  className=''>
                 <li className='text-secondaryText'>Community</li>
             </Link>            
                
